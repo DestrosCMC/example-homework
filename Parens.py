@@ -19,6 +19,4 @@ def balanced_parens2(text):
                (stack[-1] == '[' and symbol == ']') or \
                (stack[-1] == '{' and symbol == '}'):
                 stack.pop()
-            else:
-                return False
-    return len(stack) == 0
+    return True
